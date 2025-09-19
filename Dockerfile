@@ -40,4 +40,4 @@ COPY . .
 EXPOSE 8001
 
 # Run the application.
-CMD ["python3", "-m", "uvicorn", "app:app", "--host=0.0.0.0", "--port=8001"]
+CMD ["python", "src/app.py", "-m", "uvicorn", "app:app", "--host=0.0.0.0", "--port=8001"]
